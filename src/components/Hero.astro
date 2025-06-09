@@ -1,0 +1,104 @@
+---
+---
+<section class="relative pt-32 pb-20 md:pt-40 overflow-hidden hero-section">
+  <div class="container-custom relative z-10">
+    <div class="grid md:grid-cols-2 gap-12 items-center">
+      <div class="slide-up" transition:animate="slide">
+        <h1 class="mb-6 text-secondary-900 dark:text-white leading-tight">
+          <span class="text-primary-600 dark:text-primary-400"></span> Park Place Condominium<br>
+        </h1>
+        <p class="text-xl text-secondary-600 dark:text-secondary-300 mb-8 max-w-lg">
+          Elegant Living in West Roxbury - Nestled in the heart of West Roxbury, Park Place Condominiums offers a serene living experience.
+        </p>
+        <div class="flex flex-wrap gap-4">
+          <a href="/contact" class="btn-primary">
+            Contact us
+          </a>
+        </div>
+      </div>
+      
+      <div class="relative fade-in" transition:animate="fade">
+        <!-- Animated Elephant SVG Hero Image -->
+        <div class="w-full max-w-lg mx-auto">
+  <svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg" class="w-full h-auto drop-shadow-xl">
+    <defs>
+      <linearGradient id="buildingGrad" x1="0" x2="0" y1="0" y2="1">
+        <stop offset="0%" stop-color="#5f5fff" />
+        <stop offset="100%" stop-color="#a3a3ff" />
+      </linearGradient>
+      <linearGradient id="treeGrad" x1="0" x2="0" y1="0" y2="1">
+        <stop offset="0%" stop-color="#a8e6cf" />
+        <stop offset="100%" stop-color="#56c596" />
+      </linearGradient>
+      <style>
+        .fade-in { opacity: 0; animation: fadeIn 1s ease-in-out forwards; }
+        .float { animation: float 3s ease-in-out infinite; }
+
+        @keyframes fadeIn {
+          to { opacity: 1; }
+        }
+
+        @keyframes float {
+          0% { transform: translateY(0); }
+          50% { transform: translateY(-5px); }
+          100% { transform: translateY(0); }
+        }
+      </style>
+    </defs>
+
+    <!-- Background blobs (optional for more depth) -->
+    <circle cx="150" cy="100" r="95" fill="#f0f9ff" class="dark:fill-slate-800 animate-pulse" style="animation-duration: 10s;" />
+    <circle cx="60" cy="150" r="30" fill="#bae6fd" class="dark:fill-teal-800 animate-pulse" opacity="0.5" style="animation-duration: 6s;" />
+    <circle cx="240" cy="50" r="25" fill="#e0f2fe" class="dark:fill-slate-700 animate-pulse" opacity="0.5" style="animation-duration: 8s;" />
+
+    <!-- Buildings -->
+    <rect class="fade-in" x="60" y="70" width="40" height="100" rx="4" fill="url(#buildingGrad)" />
+    <rect class="fade-in" x="110" y="50" width="50" height="120" rx="4" fill="url(#buildingGrad)" />
+    <rect class="fade-in" x="170" y="80" width="40" height="90" rx="4" fill="url(#buildingGrad)" />
+
+    <!-- Minimal windows -->
+    <circle cx="80" cy="90" r="2" fill="white" />
+    <circle cx="80" cy="100" r="2" fill="white" />
+    <circle cx="125" cy="70" r="2" fill="white" />
+    <circle cx="125" cy="80" r="2" fill="white" />
+    <circle cx="190" cy="100" r="2" fill="white" />
+
+    <!-- Trees -->
+    <circle class="float" cx="40" cy="130" r="15" fill="url(#treeGrad)" />
+    <circle class="float" cx="260" cy="130" r="15" fill="url(#treeGrad)" />
+  </svg>
+</div>
+
+      </div>
+    </div>
+  </div>
+  
+  <!-- Teal section at the bottom with Trusted By -->
+  <div class="mt-10 w-full overflow-hidden -z-10" transition:animate="slide">
+    <div class="relative bg-teal-400 dark:bg-teal-500 py-12 md:py-16">
+      <div class="container-custom">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div>
+            <div class="text-3xl md:text-4xl font-bold text-black dark:text-black">
+              Welcome to your condo portal—everything you need to manage your home, all in one place.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  /* Add keyframes for additional animations if needed */
+  @keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+  }
+  
+  /* Apply floating animation to the entire SVG container */
+  .fade-in svg {
+    animation: float 6s ease-in-out infinite;
+  }
+</style>

@@ -1,0 +1,110 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import HeroSection from '../../components/HeroSection.astro';
+
+const posts = [
+  {
+    id: 'new-dashboard-features',
+    title: 'Budget release 2025',
+    excerpt: "Please find the updated budget report for year 2025",
+    date: 'April 24, 2025',
+    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80'
+  },
+  {
+    id: 'mobile-app-launch',
+    title: 'Annual Meeting at Elks Lodge',
+    excerpt: "Please hold the date and plan to attend the Park Place Annual Meeting, which will be held on April 24, 2025",
+    date: 'April 24, 2025',
+    author: 'Michael Chen',
+    authorRole: 'CTO',
+    authorAvatar: 'https://randomuser.me/api/portraits/men/46.jpg',
+    category: 'New Features',
+    image: 'https://images.unsplash.com/photo-1555774698-0b77e0d5fac6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80'
+  },
+  {
+    id: 'api-improvements',
+    title: 'Maintainance Update',
+    excerpt: `Park Place Condominium: IMPORTANT! Paving Update RESCHEDULED`,
+    date: 'April 10, 2025',
+    author: 'Emily Rodriguez',
+    authorRole: 'Lead Developer',
+    authorAvatar: 'https://randomuser.me/api/portraits/women/65.jpg',
+    category: 'Developer Updates',
+    image: 'https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80'
+  },
+ 
+  {
+    id: 'security-enhancements',
+    title: 'Security Enhancements and Compliance Updates',
+    excerpt: `We've strengthened our security measures and added new compliance certifications to keep your data safe.`,
+    date: 'March 5, 2025',
+    author: 'Jessica Lee',
+    authorRole: 'Security Officer',
+    authorAvatar: 'https://randomuser.me/api/portraits/women/45.jpg',
+    category: 'Security',
+    image: 'https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80'
+  },
+ 
+];
+
+const categories = [...new Set(posts.map(post => post.category))];
+---
+
+<Layout title="Blog - SaaSify" description="Latest product updates, feature releases, and company news from SaaSify.">
+  <Header />
+  <main>
+    <HeroSection 
+      title="Latest Updates & News" 
+      description="Stay up to date with our latest community updates and news."
+    />
+    
+    <!-- Category Filter -->
+    <div class="container-custom py-8">
+      <div class="flex flex-wrap gap-4 justify-center mb-12">
+       
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {posts.map((post, index) => (
+          <div class="card border border-gray-200 dark:border-gray-700 overflow-hidden slide-up" style={'animation-delay: ' + (index * 100) + 'ms'}>
+            <a href={'/blog/' + post.id} class="block">
+              <img 
+                src={post.image} 
+                alt={post.title}
+                class="w-full h-48 object-cover"
+                loading="lazy"
+              />
+            </a>
+            <div class="p-6">
+              <div class="flex items-center mb-4">
+                <span class="text-sm font-medium text-primary-600 dark:text-primary-400">{post.category}</span>
+                <span class="mx-2 text-gray-300 dark:text-gray-600">•</span>
+                <span class="text-sm text-gray-500 dark:text-gray-400">{post.date}</span>
+              </div>
+              <a href={'/blog/' + post.id} class="block mb-3">
+                <h2 class="text-xl font-semibold text-gray-900 dark:text-white hover:text-primary-600 dark:hover:text-primary-400 transition-colors">{post.title}</h2>
+              </a>
+              <p class="text-gray-600 dark:text-gray-300 mb-6">{post.excerpt}</p>
+              <div class="flex items-center">
+                
+               
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <div class="mt-12 flex justify-center">
+        <a href="#" class="btn-outline">
+          Load More Articles
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M10 3a1 1 0 011 1v10.586l3.293-3.293a1 1 0 011.414 1.414l-5 5a1 1 0 01-1.414 0l-5-5a1 1 0 111.414-1.414L9 14.586V4a1 1 0 011-1z" clip-rule="evenodd" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </main>
+  <Footer />
+</Layout>
