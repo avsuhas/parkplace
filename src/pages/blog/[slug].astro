@@ -19,59 +19,38 @@ const { slug } = Astro.params;
 // This would normally come from a CMS or database
 const posts = {
   'new-dashboard-features': {
-    title: 'New Dashboard Features Released',
+    title: 'New Budget Release 2025',
     date: 'May 15, 2025',
-    author: 'Sarah Johnson',
-    authorRole: 'Product Manager',
-    authorAvatar: 'https://randomuser.me/api/portraits/women/32.jpg',
-    category: 'Product Updates',
     image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
     content: `
-      <p class="mb-4">We're excited to announce the release of our new dashboard features designed to help you gain deeper insights into your business performance. These updates are based on feedback from our users and are aimed at making data analysis more intuitive and actionable.</p>
+      <p class="mb-4">We're excited to announce 2025 Budget for our condominium.</p>
       
       <h2 class="text-2xl font-semibold mb-4 mt-8">Key Improvements</h2>
       
-      <p class="mb-4">Our new dashboard includes several key improvements:</p>
-      
       <ul class="list-disc pl-6 mb-6 space-y-2">
-        <li>Customizable widgets that allow you to focus on the metrics that matter most to your business</li>
-        <li>Advanced filtering options to segment your data by date, user type, location, and more</li>
-        <li>Improved visualization tools including new chart types and color customization</li>
-        <li>Real-time data updates that refresh automatically without requiring a page reload</li>
-        <li>Export capabilities for sharing insights with your team or stakeholders</li>
+        <li>Financial Audits</li>
+        <li>Controlled spending</li>
+        <li>Landscaping</li>
+        <li>Increase Reserves</li>
       </ul>
       
-      <h2 class="text-2xl font-semibold mb-4 mt-8">Performance Metrics</h2>
-      
-      <p class="mb-4">The new performance metrics section provides a comprehensive overview of your business health with metrics such as:</p>
-      
-      <ul class="list-disc pl-6 mb-6 space-y-2">
-        <li>User engagement rates across different features</li>
-        <li>Conversion metrics at each stage of your funnel</li>
-        <li>Revenue tracking with growth comparisons</li>
-        <li>Customer retention analysis</li>
-        <li>Team productivity measurements</li>
-      </ul>
-      
+
       <div class="bg-gray-100 dark:bg-gray-800 p-6 rounded-lg mb-8">
         <h3 class="text-xl font-semibold mb-3">Pro Tip</h3>
-        <p>Use the new dashboard's comparison feature to benchmark your current performance against previous periods. This can help you identify trends and make data-driven decisions for your business strategy.</p>
+        <p>Use new budget comparison to benchmark our current projects against previous periods.</p>
       </div>
       
       <h2 class="text-2xl font-semibold mb-4 mt-8">What's Next</h2>
       
-      <p class="mb-4">We're already working on the next set of improvements for our analytics tools. In the coming months, you can expect:</p>
+      <p class="mb-4">We're already working on the next set of improvements. In the coming months, you can expect:</p>
       
       <ul class="list-disc pl-6 mb-6 space-y-2">
-        <li>AI-powered insights that automatically highlight anomalies and opportunities</li>
-        <li>Advanced forecasting tools to help with planning and goal-setting</li>
-        <li>More integration options with popular business intelligence tools</li>
-        <li>Custom report builders for more flexible data analysis</li>
+        <li>Reduce outstanding debts</li>
+        <li>Minimise unnecessary spendings</li>
       </ul>
       
-      <p class="mb-4">We value your feedback and many of these features were developed based on suggestions from our user community. If you have ideas for how we can make our platform even better, please don't hesitate to reach out to our product team.</p>
+      <p class="mb-4">We value your feedback and we welcome suggestions from our community. If you have ideas for how we can make our community even better, please don't hesitate to reach out to us.</p>
       
-      <p>Thank you for being a valued customer. We're committed to continually improving our platform to help your business succeed.</p>
     `
   },
   'mobile-app-launch': {
@@ -110,193 +89,35 @@ const posts = {
     `
   },
   'api-improvements': {
-    title: 'API Improvements and New Endpoints',
+    title: 'Maintenance updates',
     date: 'April 10, 2025',
-    author: 'Emily Rodriguez',
-    authorRole: 'Lead Developer',
-    authorAvatar: 'https://randomuser.me/api/portraits/women/65.jpg',
-    category: 'Developer Updates',
     image: 'https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
     content: `
-      <p class="mb-4">We're excited to announce significant improvements to our API along with new endpoints to help developers build more powerful integrations with our platform.</p>
+      <p class="mb-4">We're excited to announce all the maintenance updates to keep you informed</p>
+
       
-      <h2 class="text-2xl font-semibold mb-4 mt-8">API Version 2.0</h2>
-      
-      <p class="mb-4">Our new API version 2.0 includes several major improvements:</p>
-      
-      <ul class="list-disc pl-6 mb-6 space-y-2">
-        <li>RESTful design principles for more intuitive resource access</li>
-        <li>Improved rate limits with better handling for high-volume requests</li>
-        <li>Comprehensive error messages with actionable suggestions</li>
-        <li>OAuth 2.0 implementation for more secure authentication</li>
-        <li>Pagination for all list endpoints to improve performance</li>
-      </ul>
-      
-      <div class="bg-gray-100 dark:bg-gray-800 p-6 rounded-lg mb-8 overflow-x-auto">
-        <h3 class="text-xl font-semibold mb-3">Example Request</h3>
-        <pre class="text-sm bg-gray-900 text-green-400 p-4 rounded-sm"><code>curl -X GET "https://api.saasify.com/v2/users" \\
-  -H "Authorization: Bearer YOUR_API_KEY" \\
-  -H "Content-Type: application/json"</code></pre>
-      </div>
-      
-      <h2 class="text-2xl font-semibold mb-4 mt-8">New Endpoints</h2>
-      
-      <p class="mb-4">We've added several new endpoints to enable more advanced integrations:</p>
-      
-      <ul class="list-disc pl-6 mb-6 space-y-2">
-        <li><strong>/analytics</strong> - Access detailed analytics data for your account</li>
-        <li><strong>/webhooks</strong> - Configure and manage webhook notifications</li>
-        <li><strong>/automations</strong> - Create and manage automated workflows</li>
-        <li><strong>/teams</strong> - Manage team members and permissions</li>
-        <li><strong>/files</strong> - Upload, download, and manage files</li>
-      </ul>
-      
-      <h2 class="text-2xl font-semibold mb-4 mt-8">Improved Documentation</h2>
-      
-      <p class="mb-4">Along with these API improvements, we've completely revamped our developer documentation:</p>
-      
-      <ul class="list-disc pl-6 mb-6 space-y-2">
-        <li>Interactive API explorer for testing endpoints directly in the browser</li>
-        <li>Code examples in multiple languages (JavaScript, Python, Ruby, PHP, Go)</li>
-        <li>Step-by-step integration guides for common use cases</li>
-        <li>Comprehensive reference documentation for all endpoints</li>
-        <li>Changelog to track API updates and changes</li>
-      </ul>
-      
-      <div class="bg-gray-100 dark:bg-gray-800 p-6 rounded-lg mb-8">
-        <h3 class="text-xl font-semibold mb-3">Migration Guide</h3>
-        <p>We've prepared a comprehensive migration guide to help you transition from API v1 to v2. The guide includes detailed information on breaking changes, new features, and best practices for updating your integrations.</p>
-        <a href="#" class="inline-flex items-center mt-3 text-primary-600 dark:text-primary-400 font-medium hover:underline">
-          View Migration Guide
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1" viewBox="0 0 20 20" fill="currentColor">
-            <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
-          </svg>
-        </a>
-      </div>
-      
-      <h2 class="text-2xl font-semibold mb-4 mt-8">Deprecation Schedule</h2>
-      
-      <p class="mb-4">To ensure a smooth transition, we'll be supporting API v1 alongside v2 according to this schedule:</p>
-      
-      <ul class="list-disc pl-6 mb-6 space-y-2">
-        <li><strong>Now - October 2025:</strong> Both API v1 and v2 available</li>
-        <li><strong>October 2025:</strong> API v1 enters maintenance mode (no new features)</li>
-        <li><strong>April 2026:</strong> API v1 deprecated (still functional but with warnings)</li>
-        <li><strong>October 2026:</strong> API v1 sunset (no longer available)</li>
-      </ul>
-      
-      <p class="mb-4">We recommend migrating to API v2 as soon as possible to take advantage of the new features and improvements.</p>
-      
-      <p>If you have any questions or need assistance with the migration, please don't hesitate to reach out to our developer support team.</p>
+      <p>If you have any questions or need assistance, please don't hesitate to reach out to us.</p>
     `
   },
   'security-enhancements': {
     title: 'Security Enhancements and Compliance Updates',
     date: 'March 5, 2025',
-    author: 'Jessica Lee',
-    authorRole: 'Security Officer',
-    authorAvatar: 'https://randomuser.me/api/portraits/women/45.jpg',
-    category: 'Security',
+    
     image: 'https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
     content: `
-      <p class="mb-4">At SaaSify, security is our top priority. We're pleased to announce several important security enhancements and compliance updates that further strengthen the protection of your data.</p>
+      <p class="mb-4">At Park place, security is our top priority. We're pleased to announce several important security enhancements and compliance updates that further strengthen the protection of your data.</p>
       
       <h2 class="text-2xl font-semibold mb-4 mt-8">Enhanced Authentication</h2>
       
-      <p class="mb-4">We've strengthened our authentication system with several new features:</p>
-      
-      <ul class="list-disc pl-6 mb-6 space-y-2">
-        <li>FIDO2 WebAuthn support for passwordless authentication</li>
-        <li>Hardware security key integration (YubiKey, Titan Security Key)</li>
-        <li>Improved multi-factor authentication with more options</li>
-        <li>Risk-based authentication that adapts to unusual login patterns</li>
-        <li>Single Sign-On (SSO) improvements for enterprise customers</li>
-      </ul>
+      <p class="mb-4">We've strengthened our authentication system.</p>
+
       
       <div class="bg-gray-100 dark:bg-gray-800 p-6 rounded-lg mb-8">
         <h3 class="text-xl font-semibold mb-3">Security Recommendation</h3>
         <p>We strongly recommend enabling multi-factor authentication for all user accounts. Organizations can now enforce MFA at the account level through the admin dashboard.</p>
       </div>
-      
-      <h2 class="text-2xl font-semibold mb-4 mt-8">Data Protection Improvements</h2>
-      
-      <p class="mb-4">We've implemented several enhancements to better protect your data:</p>
-      
-      <ul class="list-disc pl-6 mb-6 space-y-2">
-        <li>End-to-end encryption for sensitive data fields</li>
-        <li>Enhanced data loss prevention (DLP) controls</li>
-        <li>Improved backup systems with faster recovery capabilities</li>
-        <li>Granular data retention policies with automated enforcement</li>
-        <li>Advanced audit logging for all data access and modifications</li>
-      </ul>
-      
-      <h2 class="text-2xl font-semibold mb-4 mt-8">New Compliance Certifications</h2>
-      
-      <p class="mb-4">We're proud to announce that we've achieved several new compliance certifications:</p>
-      
-      <ul class="list-disc pl-6 mb-6 space-y-2">
-        <li>ISO 27001:2022 certification for information security management</li>
-        <li>SOC 2 Type II attestation for security, availability, and confidentiality</li>
-        <li>HIPAA compliance for healthcare data protection</li>
-        <li>GDPR and CCPA compliance for personal data protection</li>
-        <li>PCI DSS Level 1 certification for payment processing</li>
-      </ul>
-      
-      <div class="grid grid-cols-2 md:grid-cols-5 gap-4 mb-8">
-        <div class="bg-white dark:bg-gray-800 p-4 rounded-lg flex items-center justify-center">
-          <img src="https://via.placeholder.com/100x60?text=ISO+27001" alt="ISO 27001 Certification" class="max-h-12" />
-        </div>
-        <div class="bg-white dark:bg-gray-800 p-4 rounded-lg flex items-center justify-center">
-          <img src="https://via.placeholder.com/100x60?text=SOC+2" alt="SOC 2 Certification" class="max-h-12" />
-        </div>
-        <div class="bg-white dark:bg-gray-800 p-4 rounded-lg flex items-center justify-center">
-          <img src="https://via.placeholder.com/100x60?text=HIPAA" alt="HIPAA Compliance" class="max-h-12" />
-        </div>
-        <div class="bg-white dark:bg-gray-800 p-4 rounded-lg flex items-center justify-center">
-          <img src="https://via.placeholder.com/100x60?text=GDPR" alt="GDPR Compliance" class="max-h-12" />
-        </div>
-        <div class="bg-white dark:bg-gray-800 p-4 rounded-lg flex items-center justify-center">
-          <img src="https://via.placeholder.com/100x60?text=PCI+DSS" alt="PCI DSS Certification" class="max-h-12" />
-        </div>
-      </div>
-      
-      <h2 class="text-2xl font-semibold mb-4 mt-8">Security Dashboard</h2>
-      
-      <p class="mb-4">We've introduced a new Security Dashboard for administrators that provides:</p>
-      
-      <ul class="list-disc pl-6 mb-6 space-y-2">
-        <li>Real-time security posture assessment</li>
-        <li>Detailed access logs with advanced filtering</li>
-        <li>Security configuration recommendations</li>
-        <li>Compliance status monitoring</li>
-        <li>Incident response management tools</li>
-      </ul>
-      
-      <div class="bg-red-50 dark:bg-red-900/30 p-6 rounded-lg mb-8">
-        <h3 class="text-xl font-semibold mb-3 text-red-700 dark:text-red-300">Important Action Required</h3>
-        <p class="mb-4">As part of these security enhancements, all API keys created before January 1, 2025, will be automatically rotated on June 1, 2025. Please update your integrations with new API keys before this date to avoid disruption.</p>
-        <a href="#" class="inline-flex items-center mt-2 text-red-600 dark:text-red-400 font-medium hover:underline">
-          Learn More About API Key Rotation
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1" viewBox="0 0 20 20" fill="currentColor">
-            <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
-          </svg>
-        </a>
-      </div>
-      
-      <h2 class="text-2xl font-semibold mb-4 mt-8">Security Training Resources</h2>
-      
-      <p class="mb-4">To help your team maintain strong security practices, we've developed new security training resources:</p>
-      
-      <ul class="list-disc pl-6 mb-6 space-y-2">
-        <li>Interactive security awareness training modules</li>
-        <li>Phishing simulation tools to test and train employees</li>
-        <li>Security best practices documentation</li>
-        <li>Role-specific security guidelines for administrators and users</li>
-      </ul>
-      
-      <p class="mb-4">These security enhancements reflect our ongoing commitment to protecting your data and maintaining your trust. We will continue to invest in security and compliance as a core part of our platform.</p>
-      
-      <p>If you have any questions about these security updates or need assistance implementing any of the new features, please contact our security team.</p>
+
+      <p>If you have any questions about these security updates or need assistance, please contact us.</p>
     `
   },
   'integration-marketplace': {
